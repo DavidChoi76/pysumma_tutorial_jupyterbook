@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Running the SUMMA setups &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
+    <title>2. Running SUMMA using pySUMMA &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="11. Effect of Forcings on CAMELs Simulations" href="camels_analyze_output.html" />
-    <link rel="prev" title="1. Creating forcing datasets for pySUMMA" href="camels_make_input.html" />
+    <link rel="next" title="3. Effect of Forcings on CAMELs Simulations" href="camels_analyze_output.html" />
+    <link rel="prev" title="1. Creating SUMMA Input using Camels Datasets" href="camels_make_input.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -131,26 +131,6 @@
    6. SUMMA simulation using Output Control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#import-pysumma">
-   7. Import pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#create-simulatioin-object">
-   8. Create Simulatioin Object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-forcing-file-list">
-   9. Explore Forcing file list
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-output-control-text-file">
-   10. Explore Output control text file
-  </a>
- </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -168,6 +148,11 @@
    2. Running ensembles of SUMMA simulations
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Parallelizing_Distributed_SUMMA_Simulations.html">
+   3. Parallelizing Distributed SUMMA Simulations
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -177,73 +162,17 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="camels_make_input.html">
-   1. Creating forcing datasets for pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#our-study-location-the-camels-basins">
-   2. Our study location: the CAMELs basins
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#make-summa-files-the-correct-hrus-1413500">
-   3. Make SUMMA files the correct HRUs: 1413500
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#forcing-files-of-nldas-with-constant-daily-values">
-   4. Forcing files of NLDAS with Constant Daily Values
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#check-files">
-   5. Check Files
+   1. Creating SUMMA Input using Camels Datasets
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   6. Running the SUMMA setups
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#interacting-with-summa-via-the-distributed-object">
-   7. Interacting with SUMMA via the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     Distributed
-    </span>
-   </code>
-   object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#pysumma-with-all-forcing-files">
-   8. pySUMMA with all Forcing Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-   9. Exploring the Parameter Calibration Space with a Latin Hyper cube
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#manipulating-the-configuration-of-the-pysumma-objects">
-   10. Manipulating the Configuration of the pySUMMA Objects
+   2. Running SUMMA using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_analyze_output.html">
-   11. Effect of Forcings on CAMELs Simulations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#summary-statistics-of-error-on-output">
-   12. Summary Statistics of Error on Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#differences-in-parameter-space-and-model-configuration">
-   13. Differences in Parameter Space and Model Configuration
+   3. Effect of Forcings on CAMELs Simulations
   </a>
  </li>
 </ul>
@@ -269,58 +198,28 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#introduction">
-   4. 1. Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#background">
-   5. 2. Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#methods">
-   6. 3. Methods
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#results">
-   7. 4. Results
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#discussion">
-   8. 5. Discussion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#post-notebook-and-simulation-results-back-to-hydroshare">
-   9. 6. Post notebook and simulation results back to Hydroshare
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_Evapotranspiration_Figure8_Right.html">
-   10. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
+   4. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_runoff_Figure9.html">
-   11. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
+   5. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_Figure1_Top.html">
-   12. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   6. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html">
-   13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_WindSpeed_Figure2.html">
-   14. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
+   8. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
 </ul>
@@ -429,26 +328,19 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   6. Running the SUMMA setups
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#you-will-need-to-edit-these-paths-to-be-your-folders">
+   2.1. You will need to edit these paths to be your folders
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-will-need-to-edit-these-paths-to-be-your-folders">
-     6.1. You will need to edit these paths to be your folders
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-problem-complexity-choices-here">
-     6.2. Make problem complexity choices here:
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-problem-complexity-choices-here">
+   2.2. Make problem complexity choices here:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#interacting-with-summa-via-the-distributed-object">
-   7. Interacting with SUMMA via the
+   2.3. Interacting with SUMMA via the
    <code class="docutils literal notranslate">
     <span class="pre">
      Distributed
@@ -457,19 +349,19 @@
    object
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pysumma-with-all-forcing-files">
-   8. pySUMMA with all Forcing Files
+   2.4. pySUMMA with all Forcing Files
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-   9. Exploring the Parameter Calibration Space with a Latin Hyper cube
+   2.5. Exploring the Parameter Calibration Space with a Latin Hyper cube
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#manipulating-the-configuration-of-the-pysumma-objects">
-   10. Manipulating the Configuration of the pySUMMA Objects
+   2.6. Manipulating the Configuration of the pySUMMA Objects
   </a>
  </li>
 </ul>
@@ -483,8 +375,8 @@
         
               <div>
                 
-  <div class="section" id="running-the-summa-setups">
-<h1><span class="section-number">6. </span>Running the SUMMA setups<a class="headerlink" href="#running-the-summa-setups" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="running-summa-using-pysumma">
+<h1><span class="section-number">2. </span>Running SUMMA using pySUMMA<a class="headerlink" href="#running-summa-using-pysumma" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.hydroshare.org/resource/c75ad34da9d642aca6e51126bfff45d1/">HydroShare Resource Link</a></p>
 <p>To begin, we have to regionalize the paths in the configuration files that SUMMA will use.
 This is accomplished by running a shell command. This is done by starting a line with the <code class="docutils literal notranslate"><span class="pre">!</span></code> operator.
@@ -529,7 +421,7 @@ Load the imports.<div class="cell docutils container">
 </div>
 <br>
 <div class="section" id="you-will-need-to-edit-these-paths-to-be-your-folders">
-<h2><span class="section-number">6.1. </span>You will need to edit these paths to be your folders<a class="headerlink" href="#you-will-need-to-edit-these-paths-to-be-your-folders" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>You will need to edit these paths to be your folders<a class="headerlink" href="#you-will-need-to-edit-these-paths-to-be-your-folders" title="Permalink to this headline">¶</a></h2>
 <br>
 Keep these the same.<div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -550,7 +442,7 @@ Keep these the same.<div class="cell docutils container">
 <br>
 </div>
 <div class="section" id="make-problem-complexity-choices-here">
-<h2><span class="section-number">6.2. </span>Make problem complexity choices here:<a class="headerlink" href="#make-problem-complexity-choices-here" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Make problem complexity choices here:<a class="headerlink" href="#make-problem-complexity-choices-here" title="Permalink to this headline">¶</a></h2>
 <p>Now decide if you want to run:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default_prob</span> <span class="pre">=</span> <span class="pre">1</span></code>: the “default” configuration with the “default” parameters. By “default” we mean whatever you chose in the summa setup files.</p></li>
@@ -579,11 +471,9 @@ Keep these the same.<div class="cell docutils container">
 </div>
 </div>
 </div>
-<br>
-</div>
 </div>
 <div class="section" id="interacting-with-summa-via-the-distributed-object">
-<h1><span class="section-number">7. </span>Interacting with SUMMA via the <code class="docutils literal notranslate"><span class="pre">Distributed</span></code> object<a class="headerlink" href="#interacting-with-summa-via-the-distributed-object" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">2.3. </span>Interacting with SUMMA via the <code class="docutils literal notranslate"><span class="pre">Distributed</span></code> object<a class="headerlink" href="#interacting-with-summa-via-the-distributed-object" title="Permalink to this headline">¶</a></h2>
 <p>We are running a <code class="docutils literal notranslate"><span class="pre">Distributed</span></code> object, which has multiple <code class="docutils literal notranslate"><span class="pre">Simulation</span></code> objects inside, each corresponding to some spatial chunk.
 We need to do <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span> <span class="pre">/glade/work/ashleyvb/CAMELs/summa_camels/.pysumma/</span></code> to clear out the distributed folders every run so permissions do not get screwed up in the loops.</p>
 <div class="cell docutils container">
@@ -643,10 +533,9 @@ noahmpTableFile                      &#39;MPTABLE.TBL&#39;
 </div>
 </div>
 </div>
-<br>
 </div>
 <div class="section" id="pysumma-with-all-forcing-files">
-<h1><span class="section-number">8. </span>pySUMMA with all Forcing Files<a class="headerlink" href="#pysumma-with-all-forcing-files" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">2.4. </span>pySUMMA with all Forcing Files<a class="headerlink" href="#pysumma-with-all-forcing-files" title="Permalink to this headline">¶</a></h2>
 <p>We run pySumma for each set of forcing files on each basin. You can check how long it has been running by using the command <code class="docutils literal notranslate"><span class="pre">qstat</span> <span class="pre">-u</span> <span class="pre">&lt;username&gt;</span></code> in a terminal. Each run takes about 9 minutes for 671 basins (shorter if a subset). First, we start with the original NLDAS files, or the “truth run”.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -660,8 +549,8 @@ noahmpTableFile                      &#39;MPTABLE.TBL&#39;
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1.19 s, sys: 314 ms, total: 1.51 s
-Wall time: 17.7 s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1.35 s, sys: 187 ms, total: 1.53 s
+Wall time: 17.9 s
 </pre></div>
 </div>
 </div>
@@ -758,8 +647,8 @@ Attributes:
     spatial_gw:       localColumn
     subRouting:       timeDlay
     notPopulatedYet:  notPopulatedYet
-CPU times: user 40.3 ms, sys: 3.87 ms, total: 44.2 ms
-Wall time: 40.9 ms
+CPU times: user 52.1 ms, sys: 10.6 ms, total: 62.7 ms
+Wall time: 59.5 ms
 </pre></div>
 </div>
 </div>
@@ -779,8 +668,8 @@ Wall time: 40.9 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 266 ms, sys: 49.5 ms, total: 315 ms
-Wall time: 342 ms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 271 ms, sys: 46 ms, total: 317 ms
+Wall time: 340 ms
 </pre></div>
 </div>
 </div>
@@ -844,16 +733,15 @@ if default_prob==1:
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>windspd
-CPU times: user 11.1 s, sys: 2.28 s, total: 13.4 s
-Wall time: 2min 10s
+CPU times: user 11.3 s, sys: 1.93 s, total: 13.2 s
+Wall time: 2min 9s
 </pre></div>
 </div>
 </div>
 </div>
-<br>
 </div>
 <div class="section" id="exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-<h1><span class="section-number">9. </span>Exploring the Parameter Calibration Space with a Latin Hyper cube<a class="headerlink" href="#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">2.5. </span>Exploring the Parameter Calibration Space with a Latin Hyper cube<a class="headerlink" href="#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube" title="Permalink to this headline">¶</a></h2>
 <p>The above models were run on the default parameter set only. Let’s rerun with parameter sets selected by using a Latin Hyper cube to get 10 different parameter sets for every HRU, in order to explore the calibration space. This will show us if the results of forcing importance could change after calibration.</p>
 <p>Currrently, none of the model parameters (or decisions) can be altered in a <code class="docutils literal notranslate"><span class="pre">Distributed</span></code> object.
 However, if we switch to <code class="docutils literal notranslate"><span class="pre">Simulation</span></code> objects and use the <code class="docutils literal notranslate"><span class="pre">Ensemble</span></code> class, we can run suites of different model parameters with relative ease.</p>
@@ -869,7 +757,6 @@ However, if we switch to <code class="docutils literal notranslate"><span class=
 <li><p>critSoilTranspire &gt; critSoilWilting</p></li>
 <li><p>critSoilWilting   &gt; theta_res</p></li>
 </ul>
-<br>
 <p>Since we must have a small subset of basins, we will proceed with the ensemble calculations with the parameter space
 Afterwards, you can run the notebook <code class="docutils literal notranslate"><span class="pre">camels_analyze_subset_output.ipynb</span></code>.</p>
 <div class="cell docutils container">
@@ -1022,8 +909,8 @@ Set 0 will be the default parameter set. This means the the default parameter se
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 6.4 s, sys: 777 ms, total: 7.18 s
-Wall time: 31.2 s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 6.21 s, sys: 893 ms, total: 7.1 s
+Wall time: 30.3 s
 </pre></div>
 </div>
 </div>
@@ -1090,16 +977,15 @@ if lhc_prob==1:
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>windspd
-CPU times: user 45.3 s, sys: 5.32 s, total: 50.6 s
-Wall time: 3min 29s
+CPU times: user 46.2 s, sys: 6.28 s, total: 52.5 s
+Wall time: 3min 30s
 </pre></div>
 </div>
 </div>
 </div>
-<br>
 </div>
 <div class="section" id="manipulating-the-configuration-of-the-pysumma-objects">
-<h1><span class="section-number">10. </span>Manipulating the Configuration of the pySUMMA Objects<a class="headerlink" href="#manipulating-the-configuration-of-the-pysumma-objects" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">2.6. </span>Manipulating the Configuration of the pySUMMA Objects<a class="headerlink" href="#manipulating-the-configuration-of-the-pysumma-objects" title="Permalink to this headline">¶</a></h2>
 <p>We need to run the parameter space with other model configurations, to see if the results seen on the default configuration hold true across the parameter space. The new configurations follow the exploration of <a class="reference external" href="https://doi.org/10.1002/2015WR017200">this paper.</a></p>
 <p>Clark, M.P., Nijssen, B., Lundquist, J.D., Kavetski, D., Rupp, D.E., Woods, R.A., Freer, J.E., Gutmann, E.D., Wood, A.W., Gochis, D.J. and Rasmussen, R.M., 2015. A unified approach for process‐based hydrologic modeling: 2. Model implementation and case studies. Water Resources Research, 51(4), pp.2515-2542.</p>
 <p>Of the model configurations discussed in this paper, the decisions that made the most difference are:</p>
@@ -1217,8 +1103,8 @@ Now, run these on the other forcing setups and parameter sets. Each iteration ta
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 6.58 s, sys: 930 ms, total: 7.51 s
-Wall time: 31.4 s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 6.53 s, sys: 965 ms, total: 7.49 s
+Wall time: 31.1 s
 </pre></div>
 </div>
 </div>
@@ -1268,7 +1154,7 @@ We plot one HRU (the first one) for 2 months. We are showing winter months, but 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/camels_pysumma_51_0.png" src="_images/camels_pysumma_51_0.png" />
+<img alt="_images/camels_pysumma_55_0.png" src="_images/camels_pysumma_55_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1333,9 +1219,10 @@ if lhc_config_prob==1:
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>windspd
-CPU times: user 47.6 s, sys: 6.17 s, total: 53.8 s
-Wall time: 3min 35s
+CPU times: user 48.6 s, sys: 6.96 s, total: 55.6 s
+Wall time: 3min 41s
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -1369,8 +1256,8 @@ Wall time: 3min 35s
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="camels_make_input.html" title="previous page"><span class="section-number">1. </span>Creating forcing datasets for pySUMMA</a>
-    <a class='right-next' id="next-link" href="camels_analyze_output.html" title="next page"><span class="section-number">11. </span>Effect of Forcings on CAMELs Simulations</a>
+    <a class='left-prev' id="prev-link" href="camels_make_input.html" title="previous page"><span class="section-number">1. </span>Creating SUMMA Input using Camels Datasets</a>
+    <a class='right-next' id="next-link" href="camels_analyze_output.html" title="next page"><span class="section-number">3. </span>Effect of Forcings on CAMELs Simulations</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

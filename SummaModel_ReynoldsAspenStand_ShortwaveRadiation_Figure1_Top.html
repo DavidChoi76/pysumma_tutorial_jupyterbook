@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>12. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
+    <title>6. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" />
-    <link rel="prev" title="11. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_Reynolds_runoff_Figure9.html" />
+    <link rel="next" title="7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" />
+    <link rel="prev" title="5. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_Reynolds_runoff_Figure9.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -131,26 +131,6 @@
    6. SUMMA simulation using Output Control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#import-pysumma">
-   7. Import pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#create-simulatioin-object">
-   8. Create Simulatioin Object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-forcing-file-list">
-   9. Explore Forcing file list
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-output-control-text-file">
-   10. Explore Output control text file
-  </a>
- </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -168,6 +148,11 @@
    2. Running ensembles of SUMMA simulations
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Parallelizing_Distributed_SUMMA_Simulations.html">
+   3. Parallelizing Distributed SUMMA Simulations
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -177,73 +162,17 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="camels_make_input.html">
-   1. Creating forcing datasets for pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#our-study-location-the-camels-basins">
-   2. Our study location: the CAMELs basins
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#make-summa-files-the-correct-hrus-1413500">
-   3. Make SUMMA files the correct HRUs: 1413500
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#forcing-files-of-nldas-with-constant-daily-values">
-   4. Forcing files of NLDAS with Constant Daily Values
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#check-files">
-   5. Check Files
+   1. Creating SUMMA Input using Camels Datasets
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_pysumma.html">
-   6. Running the SUMMA setups
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#interacting-with-summa-via-the-distributed-object">
-   7. Interacting with SUMMA via the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     Distributed
-    </span>
-   </code>
-   object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#pysumma-with-all-forcing-files">
-   8. pySUMMA with all Forcing Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-   9. Exploring the Parameter Calibration Space with a Latin Hyper cube
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#manipulating-the-configuration-of-the-pysumma-objects">
-   10. Manipulating the Configuration of the pySUMMA Objects
+   2. Running SUMMA using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_analyze_output.html">
-   11. Effect of Forcings on CAMELs Simulations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#summary-statistics-of-error-on-output">
-   12. Summary Statistics of Error on Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#differences-in-parameter-space-and-model-configuration">
-   13. Differences in Parameter Space and Model Configuration
+   3. Effect of Forcings on CAMELs Simulations
   </a>
  </li>
 </ul>
@@ -269,58 +198,28 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#introduction">
-   4. 1. Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#background">
-   5. 2. Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#methods">
-   6. 3. Methods
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#results">
-   7. 4. Results
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#discussion">
-   8. 5. Discussion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#post-notebook-and-simulation-results-back-to-hydroshare">
-   9. 6. Post notebook and simulation results back to Hydroshare
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_Evapotranspiration_Figure8_Right.html">
-   10. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
+   4. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_runoff_Figure9.html">
-   11. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
+   5. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   12. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   6. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html">
-   13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_WindSpeed_Figure2.html">
-   14. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
+   8. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
 </ul>
@@ -431,86 +330,86 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#introduction">
-   12.1. Introduction
+   6.1. Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#background">
-   12.2. Background
+   6.2. Background
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#transmission-of-shortwave-radiation-through-the-vegetation-canopy-available-in-summa">
-     12.2.1. Transmission of shortwave radiation through the vegetation canopy available in SUMMA
+     6.2.1. Transmission of shortwave radiation through the vegetation canopy available in SUMMA
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#beer-s-law">
-     12.2.2. Beer’s Law
+     6.2.2. Beer’s Law
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#accounting-for-diffuse-radiation-scattering-and-multiple-reflections-nl-scatter-method-nijssen-and-lettenmaier-1999">
-     12.2.3. Accounting for diffuse radiation, scattering and multiple reflections (NL_scatter method, Nijssen and Lettenmaier, 1999)
+     6.2.3. Accounting for diffuse radiation, scattering and multiple reflections (NL_scatter method, Nijssen and Lettenmaier, 1999)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#two-stream-radiative-transfer-models-ueb-2stream-method-mahat-and-tarboton-2012">
-     12.2.4. Two-stream radiative transfer models (UEB_2stream method, Mahat and Tarboton, 2012)
+     6.2.4. Two-stream radiative transfer models (UEB_2stream method, Mahat and Tarboton, 2012)
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#methods">
-   12.3. Methods
+   6.3. Methods
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#study-area">
-     12.3.1. Study Area
+     6.3.1. Study Area
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below">
-       12.3.1.1. The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.
+       6.3.1.1. The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-pysumma-simulation-object">
-     12.3.2. Create pySUMMA Simulation Object
+     6.3.2. Create pySUMMA Simulation Object
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#run-summa-for-the-different-canopy-shortwave-radiation-parameterizations-options">
-     12.3.3. Run SUMMA for the different canopy shortwave radiation parameterizations options
+     6.3.3. Run SUMMA for the different canopy shortwave radiation parameterizations options
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#set-beerslaw-method-as-implemented-in-vic">
-       12.3.3.1. Set BeersLaw method (as implemented in VIC)
+       6.3.3.1. Set BeersLaw method (as implemented in VIC)
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#run-the-model-with-giving-the-run-suffix-beerslaw">
-       12.3.3.2. run the model with giving the run suffix “BeersLaw”
+       6.3.3.2. run the model with giving the run suffix “BeersLaw”
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#repeat-for-the-nl-scatter-method-nijssen-and-lettenmaier-1999">
-       12.3.3.3. repeat for the NL_scatter method (Nijssen and Lettenmaier, 1999)
+       6.3.3.3. repeat for the NL_scatter method (Nijssen and Lettenmaier, 1999)
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#repeat-for-the-ueb-2stream-method-mahat-and-tarboton-2012">
-       12.3.3.4. repeat for the UEB_2stream method (Mahat and Tarboton, 2012)
+       6.3.3.4. repeat for the UEB_2stream method (Mahat and Tarboton, 2012)
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#repeat-for-the-clm-2stream-method-dick-1983">
-       12.3.3.5. repeat for the CLM_2stream method (Dick, 1983)
+       6.3.3.5. repeat for the CLM_2stream method (Dick, 1983)
       </a>
      </li>
     </ul>
@@ -519,94 +418,94 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#results">
-   12.4. Results
+   6.4. Results
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#recreate-the-figure-1-plot-from-clark-et-al-2015-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation">
-     12.4.1. Recreate the Figure 1 plot from Clark et al., 2015: The Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation
+     6.4.1. Recreate the Figure 1 plot from Clark et al., 2015: The Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-function-to-calculate-below-canopy-shortwave-radiation-from-summa-output">
-     12.4.2. Create function to calculate below canopy shortwave radiation from SUMMA output
+     6.4.2. Create function to calculate below canopy shortwave radiation from SUMMA output
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2005-10-01-2006-09-30">
-     12.4.3. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2005-10-01~2006-09-30)
+     6.4.3. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2005-10-01~2006-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-function-to-get-below-canopy-shortwave-radiation-from-forcing-data">
-     12.4.4. Create function to get below canopy shortwave radiation from forcing data
+     6.4.4. Create function to get below canopy shortwave radiation from forcing data
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2005-10-01-2006-09-30">
-     12.4.5. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period (2005-10-01~2006-09-30)
+     6.4.5. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period (2005-10-01~2006-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2005-10-01-2006-09-30">
-     12.4.6. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe (2005-10-01~2006-09-30)
+     6.4.6. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe (2005-10-01~2006-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#add-obervation-data-from-aspen-station-and-reynolds-mountain-east-to-the-plot-2005-10-01-2006-09-30">
-     12.4.7. Add obervation data from Aspen station and Reynolds Mountain East to the plot (2005-10-01~2006-09-30)
+     6.4.7. Add obervation data from Aspen station and Reynolds Mountain East to the plot (2005-10-01~2006-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2005-10-01-2006-09-30">
-     12.4.8. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data (2005-10-01~2006-09-30)
+     6.4.8. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data (2005-10-01~2006-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2006-10-01-2007-09-30">
-     12.4.9. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2006-10-01~2007-09-30)
+     6.4.9. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2006-10-01~2007-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2006-10-01-2007-09-30">
-     12.4.10. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2006-10-01~2007-09-30)
+     6.4.10. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2006-10-01~2007-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2006-10-01-2007-09-30">
-     12.4.11. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2006-10-01~2007-09-30)
+     6.4.11. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2006-10-01~2007-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2006-10-01-2007-09-30">
-     12.4.12. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2006-10-01~2007-09-30)
+     6.4.12. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2006-10-01~2007-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-200710-01-2008-09-30">
-     12.4.13. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (200710-01~2008-09-30)
+     6.4.13. Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (200710-01~2008-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2007-10-01-2008-09-30">
-     12.4.14. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2007-10-01~2008-09-30)
+     6.4.14. Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2007-10-01~2008-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2007-10-01-2008-09-30">
-     12.4.15. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2007-10-01~2008-09-30)
+     6.4.15. Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2007-10-01~2008-09-30)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2007-10-01-2008-09-30">
-     12.4.16. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2007-10-01~2008-09-30)
+     6.4.16. Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2007-10-01~2008-09-30)
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#discussion">
-   12.5. Discussion
+   6.5. Discussion
   </a>
  </li>
 </ul>
@@ -621,23 +520,23 @@
               <div>
                 
   <div class="section" id="modeling-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation-in-the-reynolds-mountain-east-catchment-using-pysumma">
-<h1><span class="section-number">12. </span>Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#modeling-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">6. </span>Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#modeling-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.hydroshare.org/resource/e3698a9da5804c1ab9128c46ecf346b2/">HydroShare Resource Link</a></p>
 <div class="section" id="introduction">
-<h2><span class="section-number">12.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>One part of the Clark et al. (2015) study explored the impact of the choice of canopy shortwave radiation parameterizations on simulations of below canopy shortwave radiation for three representative water years at the aspen site in the Reynolds Mountain East catchment. This study looked at four different canopy shortwave radiation parameterizations: BeersLaw method(as implemented in VIC), NL_scatter method(Nijssen and Lettenmaier, JGR 1999:NL 1999), UEB_2stream method(Mahat and Tarboton, WRR 2011:MT 2012), CLM_2stream method(Dick 1983)</p>
 <p>In this Jupyter Notebook, the pySUMMA library is used to reproduce this analysis. First, the four different canopy shortwave radiation parameteriations are described. Next, the Methods section describes how the pySUMMA can be used to create four different canopy shortwave radiation parameterizations of the Reynolds Mountain East catchment model. The Results section shows how to use pySUMMA and the Pandas library to reproduce Figure 1(above) from Clark et al. (2015).</p>
 <p>Collectively, this Jupyter Notebook serves as an example of how hydrologic modeling can be conducted directly within a Jupyter Notebook by leveraging the pySUMMA library.</p>
 </div>
 <div class="section" id="background">
-<h2><span class="section-number">12.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="transmission-of-shortwave-radiation-through-the-vegetation-canopy-available-in-summa">
-<h3><span class="section-number">12.2.1. </span>Transmission of shortwave radiation through the vegetation canopy available in SUMMA<a class="headerlink" href="#transmission-of-shortwave-radiation-through-the-vegetation-canopy-available-in-summa" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.2.1. </span>Transmission of shortwave radiation through the vegetation canopy available in SUMMA<a class="headerlink" href="#transmission-of-shortwave-radiation-through-the-vegetation-canopy-available-in-summa" title="Permalink to this headline">¶</a></h3>
 <p>An important source of predictive differences among hydrologic and land-surface models is the method used to simulate the transmission and attenuation of shortwave radiation through the vegetation canopy. The main inter-model differences stem from (i) the methods used to simulate radiation transmission through homogenous vegetation [Dickinson, 1983; Sellers, 1985; Nijssen and Lettenmaier, 1999; Mahat and Tarboton, 2012]; (ii) the methods used to parameterize the impact of the canopy gap fraction on grid-average shortwave radiation fluxes [Cescatti, 1997; Kucharik et al., 1999; Niu and Yang, 2004; Essery et al., 2008]; and (iii) the methods used to represent spatial variability in vegetation type [Koster and Suarez, 1992; Bonan et al., 2002]. In this paper the parameterizations of canopy shortwave radiation are restricted to radiation transmission through homogenous vegetation, as this approach is used in many existing models. Recent advances in modeling the impact of canopy heterogeneity on grid average fluxes [e.g., Essery et al., 2008] are not included at this stage in model development, and will be considered in future work.</p>
 <p>The methods considered for radiation transmission through homogenous vegetation allow for different levels of model complexity. At the simplest level we include an application of Beer’s Law for direct-beam radiation (e.g., as used in VIC). At a more complex level, we include methods that model direct and diffuse beams separately and account for multiple scattering and multiple reflections [Nijssen and Lettenmaier, 1999]. Building additional complexity, we also include options for two-stream radiative transfer models as implemented in UEB [Mahat and Tarboton, 2012] and the Noah-MP model and CLM [Dickinson, 1983; Sellers, 1985; Oleson et al., 2010; Niu et al., 2011].</p>
 </div>
 <div class="section" id="beer-s-law">
-<h3><span class="section-number">12.2.2. </span>Beer’s Law<a class="headerlink" href="#beer-s-law" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.2.2. </span>Beer’s Law<a class="headerlink" href="#beer-s-law" title="Permalink to this headline">¶</a></h3>
 <p>The interception of direct-beam shortwave radiation by vegetation at zenith angle <span class="math notranslate nohighlight">\({\theta}_{zen}\)</span> can be described as [e.g., Mahat and Tarboton, 2012]</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
@@ -674,7 +573,7 @@ Q_{swnet}^{sfc} = Q_{sw}^{0}\tau(1-\alpha^{sfc})\mspace{200mu}           (6)
 <p>The first term on the right-hand-side of equation (5) represents the shortwave radiation absorbed by the canopy on the downward pass, while the second term represents the shortwave radiation that is reflected by the surface and absorbed on the upward pass. The approach described by equations (4) through (6) is similar to that used in the Variable Infiltration Capacity (VIC) model [Liang et al., 1994] and the Distributed Hydrology Soil Vegetation Model (DHSVM) [Wigmosta et al., 1994; Wigmosta and Lettenmaier, 1999], except that (i) VIC and DHSVM do not include a dependence on the solar zenith angle; and (ii) VIC assumes that all radiation reflected by the ground surface is lost through the top of the canopy, i.e., VIC does not include the second term in equation (5), which can be quite important when the ground surface is covered by snow.</p>
 </div>
 <div class="section" id="accounting-for-diffuse-radiation-scattering-and-multiple-reflections-nl-scatter-method-nijssen-and-lettenmaier-1999">
-<h3><span class="section-number">12.2.3. </span>Accounting for diffuse radiation, scattering and multiple reflections (NL_scatter method, Nijssen and Lettenmaier, 1999)<a class="headerlink" href="#accounting-for-diffuse-radiation-scattering-and-multiple-reflections-nl-scatter-method-nijssen-and-lettenmaier-1999" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.2.3. </span>Accounting for diffuse radiation, scattering and multiple reflections (NL_scatter method, Nijssen and Lettenmaier, 1999)<a class="headerlink" href="#accounting-for-diffuse-radiation-scattering-and-multiple-reflections-nl-scatter-method-nijssen-and-lettenmaier-1999" title="Permalink to this headline">¶</a></h3>
 <p>The approach described above assumes all radiation is from a single direct beam and ignores the effects of scattering and multiple reflections. Nijssen and Lettenmaier [1999] showed that the penetration of diffuse radiation, <span class="math notranslate nohighlight">\(\tau_{pd}\)</span>, can be obtained by integrating over the upper hemisphere, as</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
@@ -718,7 +617,7 @@ m_{r} = \sum_{i=0}^{\infty}[\alpha^{sfc}\alpha^{veg}(1-(\tau_{pd})^{\varnothing_
 <p>with the factor <span class="math notranslate nohighlight">\((1-(\tau_{pd})^{\varnothing_{s}})\)</span> included to represent the fraction of radiation transmitted and scattered upwards through the canopy [see also Mahat and Tarboton, 2012].</p>
 </div>
 <div class="section" id="two-stream-radiative-transfer-models-ueb-2stream-method-mahat-and-tarboton-2012">
-<h3><span class="section-number">12.2.4. </span>Two-stream radiative transfer models (UEB_2stream method, Mahat and Tarboton, 2012)<a class="headerlink" href="#two-stream-radiative-transfer-models-ueb-2stream-method-mahat-and-tarboton-2012" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.2.4. </span>Two-stream radiative transfer models (UEB_2stream method, Mahat and Tarboton, 2012)<a class="headerlink" href="#two-stream-radiative-transfer-models-ueb-2stream-method-mahat-and-tarboton-2012" title="Permalink to this headline">¶</a></h3>
 <p>Mahat and Tarboton [2012] describe a two stream radiative transfer model based on the assumptions that radiation is scattered equally in an upward and downward direction and that scattering is along the same path as the incoming radiation. These assumptions yield</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
@@ -769,11 +668,11 @@ Q_{swnet}^{sfc} = [Q_{swb}^{0}\tau_{b}(1-\alpha^{sfc}_{b})+Q_{swd}^{0}(\tau_{d})
 </div>
 </div>
 <div class="section" id="methods">
-<h2><span class="section-number">12.3. </span>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.3. </span>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="study-area">
-<h3><span class="section-number">12.3.1. </span>Study Area<a class="headerlink" href="#study-area" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.3.1. </span>Study Area<a class="headerlink" href="#study-area" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below">
-<h4><span class="section-number">12.3.1.1. </span>The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.<a class="headerlink" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.1.1. </span>The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.<a class="headerlink" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below" title="Permalink to this headline">¶</a></h4>
 <a class="reference internal image-reference" href="_images/study_area1.jpg"><img alt="_images/study_area1.jpg" src="_images/study_area1.jpg" style="width: 1000px;" /></a>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2276,7 +2175,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="create-pysumma-simulation-object">
-<h3><span class="section-number">12.3.2. </span>Create pySUMMA Simulation Object<a class="headerlink" href="#create-pysumma-simulation-object" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.3.2. </span>Create pySUMMA Simulation Object<a class="headerlink" href="#create-pysumma-simulation-object" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pysumma</span> <span class="k">as</span> <span class="nn">ps</span>
@@ -2322,7 +2221,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="run-summa-for-the-different-canopy-shortwave-radiation-parameterizations-options">
-<h3><span class="section-number">12.3.3. </span>Run SUMMA for the different canopy shortwave radiation parameterizations options<a class="headerlink" href="#run-summa-for-the-different-canopy-shortwave-radiation-parameterizations-options" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.3.3. </span>Run SUMMA for the different canopy shortwave radiation parameterizations options<a class="headerlink" href="#run-summa-for-the-different-canopy-shortwave-radiation-parameterizations-options" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set the simulation start and finish times</span>
@@ -2350,7 +2249,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="set-beerslaw-method-as-implemented-in-vic">
-<h4><span class="section-number">12.3.3.1. </span>Set BeersLaw method (as implemented in VIC)<a class="headerlink" href="#set-beerslaw-method-as-implemented-in-vic" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.3.1. </span>Set BeersLaw method (as implemented in VIC)<a class="headerlink" href="#set-beerslaw-method-as-implemented-in-vic" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">decisions</span><span class="p">[</span><span class="s1">&#39;canopySrad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;BeersLaw&#39;</span>
@@ -2367,7 +2266,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="run-the-model-with-giving-the-run-suffix-beerslaw">
-<h4><span class="section-number">12.3.3.2. </span>run the model with giving the run suffix “BeersLaw”<a class="headerlink" href="#run-the-model-with-giving-the-run-suffix-beerslaw" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.3.2. </span>run the model with giving the run suffix “BeersLaw”<a class="headerlink" href="#run-the-model-with-giving-the-run-suffix-beerslaw" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;local&#39;</span><span class="p">,</span> <span class="n">run_suffix</span><span class="o">=</span><span class="s1">&#39;_BeersLaw&#39;</span><span class="p">)</span>
@@ -2378,7 +2277,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="repeat-for-the-nl-scatter-method-nijssen-and-lettenmaier-1999">
-<h4><span class="section-number">12.3.3.3. </span>repeat for the NL_scatter method (Nijssen and Lettenmaier, 1999)<a class="headerlink" href="#repeat-for-the-nl-scatter-method-nijssen-and-lettenmaier-1999" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.3.3. </span>repeat for the NL_scatter method (Nijssen and Lettenmaier, 1999)<a class="headerlink" href="#repeat-for-the-nl-scatter-method-nijssen-and-lettenmaier-1999" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">decisions</span><span class="p">[</span><span class="s1">&#39;canopySrad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;NL_scatter&#39;</span>
@@ -2403,7 +2302,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="repeat-for-the-ueb-2stream-method-mahat-and-tarboton-2012">
-<h4><span class="section-number">12.3.3.4. </span>repeat for the UEB_2stream method (Mahat and Tarboton, 2012)<a class="headerlink" href="#repeat-for-the-ueb-2stream-method-mahat-and-tarboton-2012" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.3.4. </span>repeat for the UEB_2stream method (Mahat and Tarboton, 2012)<a class="headerlink" href="#repeat-for-the-ueb-2stream-method-mahat-and-tarboton-2012" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">decisions</span><span class="p">[</span><span class="s1">&#39;canopySrad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;UEB_2stream&#39;</span>
@@ -2428,7 +2327,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="repeat-for-the-clm-2stream-method-dick-1983">
-<h4><span class="section-number">12.3.3.5. </span>repeat for the CLM_2stream method (Dick, 1983)<a class="headerlink" href="#repeat-for-the-clm-2stream-method-dick-1983" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">6.3.3.5. </span>repeat for the CLM_2stream method (Dick, 1983)<a class="headerlink" href="#repeat-for-the-clm-2stream-method-dick-1983" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">S</span><span class="o">.</span><span class="n">decisions</span><span class="p">[</span><span class="s1">&#39;canopySrad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;CLM_2stream&#39;</span>
@@ -2455,9 +2354,9 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="results">
-<h2><span class="section-number">12.4. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.4. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="recreate-the-figure-1-plot-from-clark-et-al-2015-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation">
-<h3><span class="section-number">12.4.1. </span>Recreate the Figure 1 plot from Clark et al., 2015: The Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation<a class="headerlink" href="#recreate-the-figure-1-plot-from-clark-et-al-2015-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.1. </span>Recreate the Figure 1 plot from Clark et al., 2015: The Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation<a class="headerlink" href="#recreate-the-figure-1-plot-from-clark-et-al-2015-the-impact-of-the-canopy-shortwave-radiation-parameterizations-on-below-canopy-shortwave-radiation" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pysumma.plotting.plotting</span> <span class="kn">import</span> <span class="n">Plotting</span>
@@ -2470,7 +2369,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="create-function-to-calculate-below-canopy-shortwave-radiation-from-summa-output">
-<h3><span class="section-number">12.4.2. </span>Create function to calculate below canopy shortwave radiation from SUMMA output<a class="headerlink" href="#create-function-to-calculate-below-canopy-shortwave-radiation-from-summa-output" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.2. </span>Create function to calculate below canopy shortwave radiation from SUMMA output<a class="headerlink" href="#create-function-to-calculate-below-canopy-shortwave-radiation-from-summa-output" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get output netCDF and resample data by the average for hour of day</span>
@@ -2498,7 +2397,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2005-10-01-2006-09-30">
-<h3><span class="section-number">12.4.3. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2005-10-01~2006-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.3. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2005-10-01~2006-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results_BeersLaw</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">results_BeersLaw_ncfile</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -2515,7 +2414,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="create-function-to-get-below-canopy-shortwave-radiation-from-forcing-data">
-<h3><span class="section-number">12.4.4. </span>Create function to get below canopy shortwave radiation from forcing data<a class="headerlink" href="#create-function-to-get-below-canopy-shortwave-radiation-from-forcing-data" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.4. </span>Create function to get below canopy shortwave radiation from forcing data<a class="headerlink" href="#create-function-to-get-below-canopy-shortwave-radiation-from-forcing-data" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get forcing netCDF and resample data by the average for hour of day</span>
@@ -2543,7 +2442,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2005-10-01-2006-09-30">
-<h3><span class="section-number">12.4.5. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period (2005-10-01~2006-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.5. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period (2005-10-01~2006-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
@@ -2562,7 +2461,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2005-10-01-2006-09-30">
-<h3><span class="section-number">12.4.6. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe (2005-10-01~2006-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.6. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe (2005-10-01~2006-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine each below canopy shortwave radiation parameterizations</span>
@@ -2804,7 +2703,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="add-obervation-data-from-aspen-station-and-reynolds-mountain-east-to-the-plot-2005-10-01-2006-09-30">
-<h3><span class="section-number">12.4.7. </span>Add obervation data from Aspen station and Reynolds Mountain East to the plot (2005-10-01~2006-09-30)<a class="headerlink" href="#add-obervation-data-from-aspen-station-and-reynolds-mountain-east-to-the-plot-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.7. </span>Add obervation data from Aspen station and Reynolds Mountain East to the plot (2005-10-01~2006-09-30)<a class="headerlink" href="#add-obervation-data-from-aspen-station-and-reynolds-mountain-east-to-the-plot-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create pySUMMA Plotting Object</span>
@@ -2847,7 +2746,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2005-10-01-2006-09-30">
-<h3><span class="section-number">12.4.8. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data (2005-10-01~2006-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.8. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data (2005-10-01~2006-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2005-10-01-2006-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create plot with four different below canopy shortwave radiation parameterizations</span>
@@ -2893,7 +2792,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2006-10-01-2007-09-30">
-<h3><span class="section-number">12.4.9. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2006-10-01~2007-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.9. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (2006-10-01~2007-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BeersLaw_hour</span> <span class="o">=</span> <span class="n">calc_short_radiation</span><span class="p">(</span><span class="n">results_BeersLaw</span><span class="p">,</span> <span class="s2">&quot;2006-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2007-09-30&quot;</span><span class="p">)</span>
@@ -2907,7 +2806,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2006-10-01-2007-09-30">
-<h3><span class="section-number">12.4.10. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2006-10-01~2007-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.10. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2006-10-01~2007-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine each below canopy shortwave radiation parameterizations</span>
@@ -2920,7 +2819,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2006-10-01-2007-09-30">
-<h3><span class="section-number">12.4.11. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2006-10-01~2007-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.11. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2006-10-01~2007-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xvals</span><span class="p">,</span> <span class="n">df_gp_hr</span> <span class="o">=</span> <span class="n">obs_radiation</span><span class="p">(</span><span class="n">Val_eddyFlux</span><span class="p">,</span> <span class="s2">&quot;2006-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2007-09-30&quot;</span><span class="p">)</span>
@@ -2930,7 +2829,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2006-10-01-2007-09-30">
-<h3><span class="section-number">12.4.12. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2006-10-01~2007-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.12. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2006-10-01~2007-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2006-10-01-2007-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create plot with four different below canopy shortwave radiation parameterizations</span>
@@ -2976,7 +2875,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-200710-01-2008-09-30">
-<h3><span class="section-number">12.4.13. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (200710-01~2008-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-200710-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.13. </span>Get hour of day output of the four below canopy shortwave radiation parameterization for the specific period (200710-01~2008-09-30)<a class="headerlink" href="#get-hour-of-day-output-of-the-four-below-canopy-shortwave-radiation-parameterization-for-the-specific-period-200710-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BeersLaw_hour</span> <span class="o">=</span> <span class="n">calc_short_radiation</span><span class="p">(</span><span class="n">results_BeersLaw</span><span class="p">,</span> <span class="s2">&quot;2007-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2008-09-30&quot;</span><span class="p">)</span>
@@ -2990,7 +2889,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2007-10-01-2008-09-30">
-<h3><span class="section-number">12.4.14. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2007-10-01~2008-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.14. </span>Combine the below canopy shortwave radiation parameterizations into a single Pandas Dataframe  (2007-10-01~2008-09-30)<a class="headerlink" href="#combine-the-below-canopy-shortwave-radiation-parameterizations-into-a-single-pandas-dataframe-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine each below canopy shortwave radiation parameterizations</span>
@@ -3003,7 +2902,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2007-10-01-2008-09-30">
-<h3><span class="section-number">12.4.15. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2007-10-01~2008-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.15. </span>Get hour of day forcing of the four below canopy shortwave radiation parameterizations for the specific period  (2007-10-01~2008-09-30)<a class="headerlink" href="#get-hour-of-day-forcing-of-the-four-below-canopy-shortwave-radiation-parameterizations-for-the-specific-period-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xvals</span><span class="p">,</span> <span class="n">df_gp_hr</span> <span class="o">=</span> <span class="n">obs_radiation</span><span class="p">(</span><span class="n">Val_eddyFlux</span><span class="p">,</span> <span class="s2">&quot;2007-10-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2008-09-30&quot;</span><span class="p">)</span>
@@ -3013,7 +2912,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2007-10-01-2008-09-30">
-<h3><span class="section-number">12.4.16. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2007-10-01~2008-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.4.16. </span>Plotting output of four different below canopy shortwave radiation parameterizations, forcing data and observation data  (2007-10-01~2008-09-30)<a class="headerlink" href="#plotting-output-of-four-different-below-canopy-shortwave-radiation-parameterizations-forcing-data-and-observation-data-2007-10-01-2008-09-30" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create plot with four different below canopy shortwave radiation parameterizations</span>
@@ -3060,7 +2959,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="discussion">
-<h2><span class="section-number">12.5. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.5. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
 <p>As stated in Clark et al., 2015, the following insights can be gained from this analysis:</p>
 <ul class="simple">
 <li><p>This plotting compares the model simulations of downwelling shortwave radiation below the vegetation canopy with below-canopy shortwave radiation observations for the aspen site in Reynolds Mountain East.</p></li>
@@ -3097,8 +2996,8 @@ roTBs2RqAAAAAElFTkSuQmCC'
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="SummaModel_Reynolds_runoff_Figure9.html" title="previous page"><span class="section-number">11. </span>Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA</a>
-    <a class='right-next' id="next-link" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" title="next page"><span class="section-number">13. </span>Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA</a>
+    <a class='left-prev' id="prev-link" href="SummaModel_Reynolds_runoff_Figure9.html" title="previous page"><span class="section-number">5. </span>Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA</a>
+    <a class='right-next' id="next-link" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" title="next page"><span class="section-number">7. </span>Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

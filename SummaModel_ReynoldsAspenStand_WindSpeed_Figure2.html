@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>14. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
+    <title>8. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,7 +57,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" />
+    <link rel="prev" title="7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -130,26 +130,6 @@
    6. SUMMA simulation using Output Control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#import-pysumma">
-   7. Import pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#create-simulatioin-object">
-   8. Create Simulatioin Object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-forcing-file-list">
-   9. Explore Forcing file list
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-output-control-text-file">
-   10. Explore Output control text file
-  </a>
- </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -167,6 +147,11 @@
    2. Running ensembles of SUMMA simulations
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Parallelizing_Distributed_SUMMA_Simulations.html">
+   3. Parallelizing Distributed SUMMA Simulations
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -176,73 +161,17 @@
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="camels_make_input.html">
-   1. Creating forcing datasets for pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#our-study-location-the-camels-basins">
-   2. Our study location: the CAMELs basins
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#make-summa-files-the-correct-hrus-1413500">
-   3. Make SUMMA files the correct HRUs: 1413500
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#forcing-files-of-nldas-with-constant-daily-values">
-   4. Forcing files of NLDAS with Constant Daily Values
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#check-files">
-   5. Check Files
+   1. Creating SUMMA Input using Camels Datasets
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_pysumma.html">
-   6. Running the SUMMA setups
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#interacting-with-summa-via-the-distributed-object">
-   7. Interacting with SUMMA via the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     Distributed
-    </span>
-   </code>
-   object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#pysumma-with-all-forcing-files">
-   8. pySUMMA with all Forcing Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-   9. Exploring the Parameter Calibration Space with a Latin Hyper cube
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#manipulating-the-configuration-of-the-pysumma-objects">
-   10. Manipulating the Configuration of the pySUMMA Objects
+   2. Running SUMMA using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_analyze_output.html">
-   11. Effect of Forcings on CAMELs Simulations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#summary-statistics-of-error-on-output">
-   12. Summary Statistics of Error on Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_analyze_output.html#differences-in-parameter-space-and-model-configuration">
-   13. Differences in Parameter Space and Model Configuration
+   3. Effect of Forcings on CAMELs Simulations
   </a>
  </li>
 </ul>
@@ -268,58 +197,28 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#introduction">
-   4. 1. Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#background">
-   5. 2. Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#methods">
-   6. 3. Methods
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#results">
-   7. 4. Results
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#discussion">
-   8. 5. Discussion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#post-notebook-and-simulation-results-back-to-hydroshare">
-   9. 6. Post notebook and simulation results back to Hydroshare
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_Evapotranspiration_Figure8_Right.html">
-   10. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
+   4. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_runoff_Figure9.html">
-   11. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
+   5. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_Figure1_Top.html">
-   12. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   6. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html">
-   13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   14. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
+   8. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
 </ul>
@@ -430,61 +329,61 @@
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#introduction">
-   14.1. Introduction
+   8.1. Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#background">
-   14.2. Background
+   8.2. Background
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#wind-profile-through-the-canopy">
-     14.2.1. Wind profile through the canopy
+     8.2.1. Wind profile through the canopy
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#methods">
-   14.3. Methods
+   8.3. Methods
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#study-area">
-     14.3.1. Study Area
+     8.3.1. Study Area
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below">
-       14.3.1.1. The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.
+       8.3.1.1. The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-pysumma-simulation-object">
-     14.3.2. Create pySUMMA Simulation Object
+     8.3.2. Create pySUMMA Simulation Object
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#check-parameter-and-parameterization-and-run-summa-for-the-different-canopy-wind-parameters">
-     14.3.3. Check parameter and parameterization and Run SUMMA for the different canopy wind parameters
+     8.3.3. Check parameter and parameterization and Run SUMMA for the different canopy wind parameters
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#checkcanopy-wind-parameters">
-       14.3.3.1. Checkcanopy wind parameters
+       8.3.3.1. Checkcanopy wind parameters
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#check-the-exponential-wind-profile-method">
-       14.3.3.2. Check the exponential wind profile method
+       8.3.3.2. Check the exponential wind profile method
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#simulate-summa-with-the-different-canopy-wind-parameters-and-the-exponential-wind-profile-method">
-       14.3.3.3. Simulate SUMMA with the different canopy wind parameters and the exponential wind profile method
+       8.3.3.3. Simulate SUMMA with the different canopy wind parameters and the exponential wind profile method
       </a>
      </li>
     </ul>
@@ -493,106 +392,106 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#results">
-   14.4. Results
+   8.4. Results
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#recreate-the-figure-2-plot-from-clark-et-al-2015-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma">
-     14.4.1. Recreate the Figure 2 plot from Clark et al., 2015: The Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
+     8.4.1. Recreate the Figure 2 plot from Clark et al., 2015: The Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#creating-method-to-get-output-forcing-and-validation-data">
-     14.4.2. Creating method to get output, forcing, and validation data
+     8.4.2. Creating method to get output, forcing, and validation data
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#method-to-get-hourly-model-output">
-       14.4.2.1. Method to get hourly model output
+       8.4.2.1. Method to get hourly model output
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#method-to-get-hourly-forcing-data">
-       14.4.2.2. Method to get hourly forcing data
+       8.4.2.2. Method to get hourly forcing data
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#method-to-get-hourly-valdation-data-observation-data">
-       14.4.2.3. Method to get hourly valdation data (observation data)
+       8.4.2.3. Method to get hourly valdation data (observation data)
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#get-data-frame-from-specific-variables-periods">
-     14.4.3. Get Data Frame from specific variables, periods
+     8.4.3. Get Data Frame from specific variables, periods
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#get-model-output-of-wind-speed">
-       14.4.3.1. Get model output of wind speed
+       8.4.3.1. Get model output of wind speed
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#get-forcing-data-of-wind-speed">
-       14.4.3.2. Get forcing data of wind speed
+       8.4.3.2. Get forcing data of wind speed
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#get-validation-data-observation-data-of-wind-speed">
-       14.4.3.3. Get validation data(observation data) of wind speed
+       8.4.3.3. Get validation data(observation data) of wind speed
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-the-plotting-of-the-above-canopy-wind-speed">
-     14.4.4. Create the plotting of the above canopy wind speed
+     8.4.4. Create the plotting of the above canopy wind speed
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-the-plotting-of-the-below-canopy-wind-speed">
-     14.4.5. 4) Create the plotting of  the below canopy wind speed
+     8.4.5. 4) Create the plotting of  the below canopy wind speed
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-the-plotting-of-exceedance-probability">
-     14.4.6. Create the plotting of Exceedance probability
+     8.4.6. Create the plotting of Exceedance probability
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#case-1-canopy-wind-parameter-0-10">
-       14.4.6.1. Case-1) Canopy wind parameter = 0.10
+       8.4.6.1. Case-1) Canopy wind parameter = 0.10
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#case-2-canopy-wind-parameter-0-28">
-       14.4.6.2. Case-2) Canopy wind parameter = 0.28
+       8.4.6.2. Case-2) Canopy wind parameter = 0.28
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#case-3-canopy-wind-parameter-0-50">
-       14.4.6.3. Case-3) Canopy wind parameter = 0.50
+       8.4.6.3. Case-3) Canopy wind parameter = 0.50
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#case-4-canopy-wind-parameter-0-75">
-       14.4.6.4. Case-4) Canopy wind parameter = 0.75
+       8.4.6.4. Case-4) Canopy wind parameter = 0.75
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#get-below-canopy-observation-from-validation-data">
-       14.4.6.5. Get Below-canopy observation from validation data
+       8.4.6.5. Get Below-canopy observation from validation data
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#get-combined-exceedance-probability-plot-figure-2-left-in-summa-2nd-paper">
-       14.4.6.6. Get combined Exceedance Probability Plot (Figure 2, left in SUMMA 2nd paper)
+       8.4.6.6. Get combined Exceedance Probability Plot (Figure 2, left in SUMMA 2nd paper)
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#add-obserevation-data-into-previous-combined-plot-figure-2-left-in-summa-2nd-paper">
-       14.4.6.7. Add obserevation data into previous combined plot (Figure 2, left in SUMMA 2nd paper)
+       8.4.6.7. Add obserevation data into previous combined plot (Figure 2, left in SUMMA 2nd paper)
       </a>
      </li>
     </ul>
@@ -601,7 +500,7 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#discussion">
-   14.5. Discussion
+   8.5. Discussion
   </a>
  </li>
 </ul>
@@ -616,19 +515,19 @@
               <div>
                 
   <div class="section" id="modeling-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma">
-<h1><span class="section-number">14. </span>Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#modeling-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">8. </span>Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#modeling-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.hydroshare.org/resource/e3698a9da5804c1ab9128c46ecf346b2/">HydroShare Resource Link</a></p>
 <div class="section" id="introduction">
-<h2><span class="section-number">14.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>One part of the Clark et al. (2015) study explored the impact of the choice of the canopy wind parameter for the exponential wind profile on simulations of below canopy wind speed at the aspen site in the Reynolds Mountain East catchment. This study looked at the impact of the Canopy wind parameter[0.10, 0.28, 0.50, 0.750] as used in the parameterization described by the exponential wind profile.</p>
 <p>In this Jupyter Notebook, the pySUMMA library is used to reproduce this analysis. According to the application of different Canopy wind parameter[0.10, 0.28, 0.50, 0.750], the sensitivity of result describes.
 The Results section shows how to use pySUMMA and the Pandas library to reproduce Figure 2 from Clark et al. (2015).</p>
 <p>Collectively, this Jupyter Notebook serves as an example of how hydrologic modeling can be conducted directly within a Jupyter Notebook by leveraging the pySUMMA library.</p>
 </div>
 <div class="section" id="background">
-<h2><span class="section-number">14.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="wind-profile-through-the-canopy">
-<h3><span class="section-number">14.2.1. </span>Wind profile through the canopy<a class="headerlink" href="#wind-profile-through-the-canopy" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.2.1. </span>Wind profile through the canopy<a class="headerlink" href="#wind-profile-through-the-canopy" title="Permalink to this headline">¶</a></h3>
 <p>In describing wind profiles, we depart from the positive-downward coordinate system used in the rest of the paper and use the variable h (m) to define the height above the soil surface (h is defined as positive-upward). This is done to maintain consistency with the presentation in previous papers.</p>
 <p>There are substantial inter-model differences in parameterization of wind profiles through the canopy: for example, the original model of Choudhury and Monteith [1988] developed for wheat assumes an exponential reduction in wind speed through the canopy extends to the ground surface, and this parameteriztion has been directly applied by Niu and Yang [2004] for forests. In contrast, Mahat et al. [2013] and Andreadis et al. [2009] assume winds follow a logarithmic profile from the upper boundary to the top of the canopy, an exponential profile within the canopy, and a logarithmic profile again below the canopy.</p>
 <p>The Mahat et al. [2013] parameterization is</p>
@@ -664,11 +563,11 @@ a_{w} = a_{w,0}(V_{ex})^{2/3} \frac{(h_{top}^{veg})^{1/3}}{(S_{leaf})^{1/3}}
 </div>
 </div>
 <div class="section" id="methods">
-<h2><span class="section-number">14.3. </span>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.3. </span>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="study-area">
-<h3><span class="section-number">14.3.1. </span>Study Area<a class="headerlink" href="#study-area" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.3.1. </span>Study Area<a class="headerlink" href="#study-area" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below">
-<h4><span class="section-number">14.3.1.1. </span>The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.<a class="headerlink" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.3.1.1. </span>The Reynolds Mountain East catchment is located in southwestern Idaho as shown in the figure below.<a class="headerlink" href="#the-reynolds-mountain-east-catchment-is-located-in-southwestern-idaho-as-shown-in-the-figure-below" title="Permalink to this headline">¶</a></h4>
 <a class="reference internal image-reference" href="_images/study_area3.jpg"><img alt="_images/study_area3.jpg" src="_images/study_area3.jpg" style="width: 1000px;" /></a>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2171,7 +2070,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="create-pysumma-simulation-object">
-<h3><span class="section-number">14.3.2. </span>Create pySUMMA Simulation Object<a class="headerlink" href="#create-pysumma-simulation-object" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.3.2. </span>Create pySUMMA Simulation Object<a class="headerlink" href="#create-pysumma-simulation-object" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pysumma</span> <span class="k">as</span> <span class="nn">ps</span>
@@ -2217,7 +2116,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="check-parameter-and-parameterization-and-run-summa-for-the-different-canopy-wind-parameters">
-<h3><span class="section-number">14.3.3. </span>Check parameter and parameterization and Run SUMMA for the different canopy wind parameters<a class="headerlink" href="#check-parameter-and-parameterization-and-run-summa-for-the-different-canopy-wind-parameters" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.3.3. </span>Check parameter and parameterization and Run SUMMA for the different canopy wind parameters<a class="headerlink" href="#check-parameter-and-parameterization-and-run-summa-for-the-different-canopy-wind-parameters" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check the simulation start and finish times</span>
@@ -2232,7 +2131,7 @@ roTBs2RqAAAAAElFTkSuQmCC'
 </div>
 </div>
 <div class="section" id="checkcanopy-wind-parameters">
-<h4><span class="section-number">14.3.3.1. </span>Checkcanopy wind parameters<a class="headerlink" href="#checkcanopy-wind-parameters" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.3.3.1. </span>Checkcanopy wind parameters<a class="headerlink" href="#checkcanopy-wind-parameters" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a trial parameter object to check canopy wind parameters</span>
@@ -2597,7 +2496,7 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="check-the-exponential-wind-profile-method">
-<h4><span class="section-number">14.3.3.2. </span>Check the exponential wind profile method<a class="headerlink" href="#check-the-exponential-wind-profile-method" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.3.3.2. </span>Check the exponential wind profile method<a class="headerlink" href="#check-the-exponential-wind-profile-method" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check the exponential wind profile method</span>
@@ -2627,7 +2526,7 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="simulate-summa-with-the-different-canopy-wind-parameters-and-the-exponential-wind-profile-method">
-<h4><span class="section-number">14.3.3.3. </span>Simulate SUMMA with the different canopy wind parameters and the exponential wind profile method<a class="headerlink" href="#simulate-summa-with-the-different-canopy-wind-parameters-and-the-exponential-wind-profile-method" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.3.3.3. </span>Simulate SUMMA with the different canopy wind parameters and the exponential wind profile method<a class="headerlink" href="#simulate-summa-with-the-different-canopy-wind-parameters-and-the-exponential-wind-profile-method" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># run the model giving the output the prefix &quot;wind_speed&quot;</span>
@@ -2641,9 +2540,9 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="results">
-<h2><span class="section-number">14.4. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.4. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="recreate-the-figure-2-plot-from-clark-et-al-2015-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma">
-<h3><span class="section-number">14.4.1. </span>Recreate the Figure 2 plot from Clark et al., 2015: The Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#recreate-the-figure-2-plot-from-clark-et-al-2015-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.1. </span>Recreate the Figure 2 plot from Clark et al., 2015: The Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA<a class="headerlink" href="#recreate-the-figure-2-plot-from-clark-et-al-2015-the-impact-of-the-canopy-wind-parameter-for-the-exponential-wind-profile-on-simulation-of-below-canopy-wind-speed-in-the-reynolds-mountain-east-catchment-using-pysumma" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pysumma.plotting.plotting</span> <span class="kn">import</span> <span class="n">Plotting</span>
@@ -2656,9 +2555,9 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="creating-method-to-get-output-forcing-and-validation-data">
-<h3><span class="section-number">14.4.2. </span>Creating method to get output, forcing, and validation data<a class="headerlink" href="#creating-method-to-get-output-forcing-and-validation-data" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.2. </span>Creating method to get output, forcing, and validation data<a class="headerlink" href="#creating-method-to-get-output-forcing-and-validation-data" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="method-to-get-hourly-model-output">
-<h4><span class="section-number">14.4.2.1. </span>Method to get hourly model output<a class="headerlink" href="#method-to-get-hourly-model-output" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.2.1. </span>Method to get hourly model output<a class="headerlink" href="#method-to-get-hourly-model-output" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample specific variable data during certain period hourly</span>
@@ -2685,7 +2584,7 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="method-to-get-hourly-forcing-data">
-<h4><span class="section-number">14.4.2.2. </span>Method to get hourly forcing data<a class="headerlink" href="#method-to-get-hourly-forcing-data" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.2.2. </span>Method to get hourly forcing data<a class="headerlink" href="#method-to-get-hourly-forcing-data" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample specific variable data during certain period hourly</span>
@@ -2714,7 +2613,7 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="method-to-get-hourly-valdation-data-observation-data">
-<h4><span class="section-number">14.4.2.3. </span>Method to get hourly valdation data (observation data)<a class="headerlink" href="#method-to-get-hourly-valdation-data-observation-data" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.2.3. </span>Method to get hourly valdation data (observation data)<a class="headerlink" href="#method-to-get-hourly-valdation-data-observation-data" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample specific variable data during certain period hourly</span>
@@ -2749,9 +2648,9 @@ Dimensions without coordinates: hru</pre><div class='xr-wrap' hidden><div class=
 </div>
 </div>
 <div class="section" id="get-data-frame-from-specific-variables-periods">
-<h3><span class="section-number">14.4.3. </span>Get Data Frame from specific variables, periods<a class="headerlink" href="#get-data-frame-from-specific-variables-periods" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.3. </span>Get Data Frame from specific variables, periods<a class="headerlink" href="#get-data-frame-from-specific-variables-periods" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="get-model-output-of-wind-speed">
-<h4><span class="section-number">14.4.3.1. </span>Get model output of wind speed<a class="headerlink" href="#get-model-output-of-wind-speed" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.3.1. </span>Get model output of wind speed<a class="headerlink" href="#get-model-output-of-wind-speed" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check output varible what we want </span>
@@ -3331,7 +3230,7 @@ Attributes:
 </div>
 </div>
 <div class="section" id="get-forcing-data-of-wind-speed">
-<h4><span class="section-number">14.4.3.2. </span>Get forcing data of wind speed<a class="headerlink" href="#get-forcing-data-of-wind-speed" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.3.2. </span>Get forcing data of wind speed<a class="headerlink" href="#get-forcing-data-of-wind-speed" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get forcing data path</span>
@@ -3805,7 +3704,7 @@ Attributes:
 </div>
 </div>
 <div class="section" id="get-validation-data-observation-data-of-wind-speed">
-<h4><span class="section-number">14.4.3.3. </span>Get validation data(observation data) of wind speed<a class="headerlink" href="#get-validation-data-observation-data-of-wind-speed" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.3.3. </span>Get validation data(observation data) of wind speed<a class="headerlink" href="#get-validation-data-observation-data-of-wind-speed" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get validation data path</span>
@@ -4217,7 +4116,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="create-the-plotting-of-the-above-canopy-wind-speed">
-<h3><span class="section-number">14.4.4. </span>Create the plotting of the above canopy wind speed<a class="headerlink" href="#create-the-plotting-of-the-above-canopy-wind-speed" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.4. </span>Create the plotting of the above canopy wind speed<a class="headerlink" href="#create-the-plotting-of-the-above-canopy-wind-speed" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create each object to create new Dataframe</span>
@@ -4315,7 +4214,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="create-the-plotting-of-the-below-canopy-wind-speed">
-<h3><span class="section-number">14.4.5. </span>4) Create the plotting of  the below canopy wind speed<a class="headerlink" href="#create-the-plotting-of-the-below-canopy-wind-speed" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.5. </span>4) Create the plotting of  the below canopy wind speed<a class="headerlink" href="#create-the-plotting-of-the-below-canopy-wind-speed" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create each object to create new Dataframe</span>
@@ -4411,9 +4310,9 @@ Data variables:
 </div>
 </div>
 <div class="section" id="create-the-plotting-of-exceedance-probability">
-<h3><span class="section-number">14.4.6. </span>Create the plotting of Exceedance probability<a class="headerlink" href="#create-the-plotting-of-exceedance-probability" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">8.4.6. </span>Create the plotting of Exceedance probability<a class="headerlink" href="#create-the-plotting-of-exceedance-probability" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="case-1-canopy-wind-parameter-0-10">
-<h4><span class="section-number">14.4.6.1. </span>Case-1) Canopy wind parameter = 0.10<a class="headerlink" href="#case-1-canopy-wind-parameter-0-10" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.1. </span>Case-1) Canopy wind parameter = 0.10<a class="headerlink" href="#case-1-canopy-wind-parameter-0-10" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check wind speed data from SUMMA output</span>
@@ -4776,7 +4675,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="case-2-canopy-wind-parameter-0-28">
-<h4><span class="section-number">14.4.6.2. </span>Case-2) Canopy wind parameter = 0.28<a class="headerlink" href="#case-2-canopy-wind-parameter-0-28" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.2. </span>Case-2) Canopy wind parameter = 0.28<a class="headerlink" href="#case-2-canopy-wind-parameter-0-28" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check wind speed data from SUMMA output</span>
@@ -4810,7 +4709,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="case-3-canopy-wind-parameter-0-50">
-<h4><span class="section-number">14.4.6.3. </span>Case-3) Canopy wind parameter = 0.50<a class="headerlink" href="#case-3-canopy-wind-parameter-0-50" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.3. </span>Case-3) Canopy wind parameter = 0.50<a class="headerlink" href="#case-3-canopy-wind-parameter-0-50" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check wind speed data from SUMMA output</span>
@@ -4844,7 +4743,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="case-4-canopy-wind-parameter-0-75">
-<h4><span class="section-number">14.4.6.4. </span>Case-4) Canopy wind parameter = 0.75<a class="headerlink" href="#case-4-canopy-wind-parameter-0-75" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.4. </span>Case-4) Canopy wind parameter = 0.75<a class="headerlink" href="#case-4-canopy-wind-parameter-0-75" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check wind speed data from SUMMA output</span>
@@ -4878,7 +4777,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="get-below-canopy-observation-from-validation-data">
-<h4><span class="section-number">14.4.6.5. </span>Get Below-canopy observation from validation data<a class="headerlink" href="#get-below-canopy-observation-from-validation-data" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.5. </span>Get Below-canopy observation from validation data<a class="headerlink" href="#get-below-canopy-observation-from-validation-data" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check validation data</span>
@@ -5008,7 +4907,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="get-combined-exceedance-probability-plot-figure-2-left-in-summa-2nd-paper">
-<h4><span class="section-number">14.4.6.6. </span>Get combined Exceedance Probability Plot (Figure 2, left in SUMMA 2nd paper)<a class="headerlink" href="#get-combined-exceedance-probability-plot-figure-2-left-in-summa-2nd-paper" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.6. </span>Get combined Exceedance Probability Plot (Figure 2, left in SUMMA 2nd paper)<a class="headerlink" href="#get-combined-exceedance-probability-plot-figure-2-left-in-summa-2nd-paper" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># merge each exceedance probability plot with the different canopy wind parameter</span>
@@ -5020,7 +4919,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="add-obserevation-data-into-previous-combined-plot-figure-2-left-in-summa-2nd-paper">
-<h4><span class="section-number">14.4.6.7. </span>Add obserevation data into previous combined plot (Figure 2, left in SUMMA 2nd paper)<a class="headerlink" href="#add-obserevation-data-into-previous-combined-plot-figure-2-left-in-summa-2nd-paper" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">8.4.6.7. </span>Add obserevation data into previous combined plot (Figure 2, left in SUMMA 2nd paper)<a class="headerlink" href="#add-obserevation-data-into-previous-combined-plot-figure-2-left-in-summa-2nd-paper" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># reset the name of legend and color</span>
@@ -5057,7 +4956,7 @@ Data variables:
 </div>
 </div>
 <div class="section" id="discussion">
-<h2><span class="section-number">14.5. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.5. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h2>
 <p>As stated in Clark et al., 2015, the following insights can be gained from this analysis:</p>
 <ul class="simple">
 <li><p>The simulations in Figure 2(left) illustrate that perturbations in the canopy wind parameter used to define the
@@ -5098,7 +4997,7 @@ modify below-canopy wind speed by a factor of five.</p></li>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" title="previous page"><span class="section-number">13. </span>Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA</a>
+    <a class='left-prev' id="prev-link" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html" title="previous page"><span class="section-number">7. </span>Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

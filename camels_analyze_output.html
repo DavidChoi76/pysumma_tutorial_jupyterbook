@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>11. Effect of Forcings on CAMELs Simulations &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
+    <title>3. Effect of Forcings on CAMELs Simulations &#8212; pySUMMA Tutorial Jupyter Notebooks</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="1. Modeling the Impact of Simlpe Soil Resistance method on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA" href="SummaModel_ReynoldsAspennStand_StomatalResistance_Basic_Plot.html" />
-    <link rel="prev" title="6. Running the SUMMA setups" href="camels_pysumma.html" />
+    <link rel="prev" title="2. Running SUMMA using pySUMMA" href="camels_pysumma.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -131,26 +131,6 @@
    6. SUMMA simulation using Output Control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#import-pysumma">
-   7. Import pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#create-simulatioin-object">
-   8. Create Simulatioin Object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-forcing-file-list">
-   9. Explore Forcing file list
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Simulation_using_output_control.html#explore-output-control-text-file">
-   10. Explore Output control text file
-  </a>
- </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -168,6 +148,11 @@
    2. Running ensembles of SUMMA simulations
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Parallelizing_Distributed_SUMMA_Simulations.html">
+   3. Parallelizing Distributed SUMMA Simulations
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -177,73 +162,17 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="camels_make_input.html">
-   1. Creating forcing datasets for pySUMMA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#our-study-location-the-camels-basins">
-   2. Our study location: the CAMELs basins
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#make-summa-files-the-correct-hrus-1413500">
-   3. Make SUMMA files the correct HRUs: 1413500
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#forcing-files-of-nldas-with-constant-daily-values">
-   4. Forcing files of NLDAS with Constant Daily Values
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_make_input.html#check-files">
-   5. Check Files
+   1. Creating SUMMA Input using Camels Datasets
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="camels_pysumma.html">
-   6. Running the SUMMA setups
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#interacting-with-summa-via-the-distributed-object">
-   7. Interacting with SUMMA via the
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     Distributed
-    </span>
-   </code>
-   object
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#pysumma-with-all-forcing-files">
-   8. pySUMMA with all Forcing Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#exploring-the-parameter-calibration-space-with-a-latin-hyper-cube">
-   9. Exploring the Parameter Calibration Space with a Latin Hyper cube
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="camels_pysumma.html#manipulating-the-configuration-of-the-pysumma-objects">
-   10. Manipulating the Configuration of the pySUMMA Objects
+   2. Running SUMMA using pySUMMA
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   11. Effect of Forcings on CAMELs Simulations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#summary-statistics-of-error-on-output">
-   12. Summary Statistics of Error on Output
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#differences-in-parameter-space-and-model-configuration">
-   13. Differences in Parameter Space and Model Configuration
+   3. Effect of Forcings on CAMELs Simulations
   </a>
  </li>
 </ul>
@@ -269,58 +198,28 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#introduction">
-   4. 1. Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#background">
-   5. 2. Background
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#methods">
-   6. 3. Methods
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#results">
-   7. 4. Results
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#discussion">
-   8. 5. Discussion
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="SummaModel_ReynoldsAspenStand_RootDistribution_Figure8_Left.html#post-notebook-and-simulation-results-back-to-hydroshare">
-   9. 6. Post notebook and simulation results back to Hydroshare
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_Evapotranspiration_Figure8_Right.html">
-   10. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
+   4. Modeling the Impact of Lateral Flow Parameterizations on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_Reynolds_runoff_Figure9.html">
-   11. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
+   5. Modeling the Impact of Lateral Flow Parameterizations on Basin Wide Runoff in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_Figure1_Top.html">
-   12. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   6. Modeling the Impact of the canopy shortwave radiation parameterizations on below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_ShortwaveRadiation_LAI_Figure1_Bottom.html">
-   13. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
+   7. Modeling the Impact of LAI paramter values on simulation of below canopy shortwave radiation in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="SummaModel_ReynoldsAspenStand_WindSpeed_Figure2.html">
-   14. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
+   8. Modeling the Impact of the canopy wind parameter for the exponential wind profile on simulation of below canopy wind speed in the Reynolds Mountain East catchment using pySUMMA
   </a>
  </li>
 </ul>
@@ -429,31 +328,24 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   11. Effect of Forcings on CAMELs Simulations
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#you-will-need-to-edit-these-paths-to-be-your-folders">
-     11.1. You will need to edit these paths to be your folders
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-problem-complexity-choices-here">
-     11.2. Make problem complexity choices here:
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#summary-statistics-of-error-on-output">
-   12. Summary Statistics of Error on Output
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#you-will-need-to-edit-these-paths-to-be-your-folders">
+   3.1. You will need to edit these paths to be your folders
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#make-problem-complexity-choices-here">
+   3.2. Make problem complexity choices here:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manipulating-the-configuration-of-the-pysumma-objects">
+   3.3. Manipulating the Configuration of the pySUMMA Objects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#differences-in-parameter-space-and-model-configuration">
-   13. Differences in Parameter Space and Model Configuration
+   3.4. Differences in Parameter Space and Model Configuration
   </a>
  </li>
 </ul>
@@ -468,7 +360,7 @@
               <div>
                 
   <div class="section" id="effect-of-forcings-on-camels-simulations">
-<h1><span class="section-number">11. </span>Effect of Forcings on CAMELs Simulations<a class="headerlink" href="#effect-of-forcings-on-camels-simulations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">3. </span>Effect of Forcings on CAMELs Simulations<a class="headerlink" href="#effect-of-forcings-on-camels-simulations" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.hydroshare.org/resource/c75ad34da9d642aca6e51126bfff45d1/">HydroShare Resource Link</a></p>
 <p>Now we can look at the output and see which forcing variables have the most error. This code is meant to be run on the subset of basins that the ensembles of different model decisions were run on in the <code class="docutils literal notranslate"><span class="pre">camels_pysumma.ipynb</span></code> notebook. This notebook will not run all the way through if the ensembles were not created.</p>
 <p>Load the imports.</p>
@@ -486,7 +378,7 @@
 </div>
 <br>
 <div class="section" id="you-will-need-to-edit-these-paths-to-be-your-folders">
-<h2><span class="section-number">11.1. </span>You will need to edit these paths to be your folders<a class="headerlink" href="#you-will-need-to-edit-these-paths-to-be-your-folders" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.1. </span>You will need to edit these paths to be your folders<a class="headerlink" href="#you-will-need-to-edit-these-paths-to-be-your-folders" title="Permalink to this headline">¶</a></h2>
 <br>
 Keep these the same.<div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -499,7 +391,7 @@ Keep these the same.<div class="cell docutils container">
 <br>
 </div>
 <div class="section" id="make-problem-complexity-choices-here">
-<h2><span class="section-number">11.2. </span>Make problem complexity choices here:<a class="headerlink" href="#make-problem-complexity-choices-here" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.2. </span>Make problem complexity choices here:<a class="headerlink" href="#make-problem-complexity-choices-here" title="Permalink to this headline">¶</a></h2>
 <p>In the notebook <code class="docutils literal notranslate"><span class="pre">camels_pysumma.ipynb</span></code> you decided if you wanted to run:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">default_prob</span> <span class="pre">=</span> <span class="pre">1</span></code>: the default configuration with the parameters you have.</p></li>
@@ -517,11 +409,9 @@ Keep these the same.<div class="cell docutils container">
 </div>
 </div>
 </div>
-<br>
 </div>
-</div>
-<div class="section" id="summary-statistics-of-error-on-output">
-<h1><span class="section-number">12. </span>Summary Statistics of Error on Output<a class="headerlink" href="#summary-statistics-of-error-on-output" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="manipulating-the-configuration-of-the-pysumma-objects">
+<h2><span class="section-number">3.3. </span>Manipulating the Configuration of the pySUMMA Objects<a class="headerlink" href="#manipulating-the-configuration-of-the-pysumma-objects" title="Permalink to this headline">¶</a></h2>
 <p>Let’s look at some error metrics by HRU, starting with the default paramaters and default configuration.
 KGE means perfect agreement if it is 1, and &lt;0 means the mean is a better guess.
 Bias means perfect aggreement if it is 0, and larger means larger error.
@@ -541,93 +431,6 @@ All data have a small number added so we don’t divide by 0.</p>
     <span class="n">suffix</span> <span class="o">=</span> <span class="s1">&#39;_hru.nc&#39;</span>
     <span class="n">default_name</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span>      
 <span class="n">sim_truth</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">top_folder</span><span class="o">+</span><span class="s1">&#39;/output/merged_day/NLDAStruth&#39;</span><span class="o">+</span><span class="n">suffix</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/file_manager.py</span> in <span class="ni">_acquire_with_cache_info</span><span class="nt">(self, needs_lock)</span>
-<span class="g g-Whitespace">    </span><span class="mi">198</span>             <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">199</span>                 <span class="n">file</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_key</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">200</span>             <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/lru_cache.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lock</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">53</span>             <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">54</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="o">.</span><span class="n">move_to_end</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-
-<span class="ne">KeyError</span>: [&lt;class &#39;netCDF4._netCDF4.Dataset&#39;&gt;, (&#39;/home/jovyan/work/Jupyter_Book/pySUMMA_Jupyter_Book/pysumma_tutorial_jupyterbook/docs/summa_camels/output/merged_day/NLDAStruth_configs_latin.nc&#39;,), &#39;r&#39;, ((&#39;clobber&#39;, True), (&#39;diskless&#39;, False), (&#39;format&#39;, &#39;NETCDF4&#39;), (&#39;persist&#39;, False))]
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="mi">047</span><span class="n">fcacfd37c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">suffix</span> <span class="o">=</span> <span class="s1">&#39;_hru.nc&#39;</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">default_name</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span>
-<span class="ne">---&gt; </span><span class="mi">13</span> <span class="n">sim_truth</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="n">top_folder</span><span class="o">+</span><span class="s1">&#39;/output/merged_day/NLDAStruth&#39;</span><span class="o">+</span><span class="n">suffix</span><span class="p">)</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/api.py</span> in <span class="ni">open_dataset</span><span class="nt">(filename_or_obj, group, decode_cf, mask_and_scale, decode_times, autoclose, concat_characters, decode_coords, engine, chunks, lock, cache, drop_variables, backend_kwargs, use_cftime, decode_timedelta)</span>
-<span class="g g-Whitespace">    </span><span class="mi">507</span>         <span class="k">if</span> <span class="n">engine</span> <span class="o">==</span> <span class="s2">&quot;netcdf4&quot;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">508</span>             <span class="n">store</span> <span class="o">=</span> <span class="n">backends</span><span class="o">.</span><span class="n">NetCDF4DataStore</span><span class="o">.</span><span class="n">open</span><span class="p">(</span>
-<span class="ne">--&gt; </span><span class="mi">509</span>                 <span class="n">filename_or_obj</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="n">lock</span><span class="p">,</span> <span class="o">**</span><span class="n">backend_kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">510</span>             <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">511</span>         <span class="k">elif</span> <span class="n">engine</span> <span class="o">==</span> <span class="s2">&quot;scipy&quot;</span><span class="p">:</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/netCDF4_.py</span> in <span class="ni">open</span><span class="nt">(cls, filename, mode, format, group, clobber, diskless, persist, lock, lock_maker, autoclose)</span>
-<span class="g g-Whitespace">    </span><span class="mi">356</span>             <span class="n">netCDF4</span><span class="o">.</span><span class="n">Dataset</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="n">kwargs</span>
-<span class="g g-Whitespace">    </span><span class="mi">357</span>         <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">358</span>         <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="n">lock</span><span class="p">,</span> <span class="n">autoclose</span><span class="o">=</span><span class="n">autoclose</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">359</span> 
-<span class="g g-Whitespace">    </span><span class="mi">360</span>     <span class="k">def</span> <span class="nf">_acquire</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needs_lock</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/netCDF4_.py</span> in <span class="ni">__init__</span><span class="nt">(self, manager, group, mode, lock, autoclose)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_group</span> <span class="o">=</span> <span class="n">group</span>
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span> <span class="o">=</span> <span class="n">mode</span>
-<span class="ne">--&gt; </span><span class="mi">314</span>         <span class="bp">self</span><span class="o">.</span><span class="n">format</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ds</span><span class="o">.</span><span class="n">data_model</span>
-<span class="g g-Whitespace">    </span><span class="mi">315</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">ds</span><span class="o">.</span><span class="n">filepath</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">316</span>         <span class="bp">self</span><span class="o">.</span><span class="n">is_remote</span> <span class="o">=</span> <span class="n">is_remote_uri</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_filename</span><span class="p">)</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/netCDF4_.py</span> in <span class="ni">ds</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">365</span>     <span class="nd">@property</span>
-<span class="g g-Whitespace">    </span><span class="mi">366</span>     <span class="k">def</span> <span class="nf">ds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">367</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_acquire</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">368</span> 
-<span class="g g-Whitespace">    </span><span class="mi">369</span>     <span class="k">def</span> <span class="nf">open_store_variable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">var</span><span class="p">):</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/netCDF4_.py</span> in <span class="ni">_acquire</span><span class="nt">(self, needs_lock)</span>
-<span class="g g-Whitespace">    </span><span class="mi">359</span> 
-<span class="g g-Whitespace">    </span><span class="mi">360</span>     <span class="k">def</span> <span class="nf">_acquire</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needs_lock</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-<span class="ne">--&gt; </span><span class="mi">361</span>         <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_manager</span><span class="o">.</span><span class="n">acquire_context</span><span class="p">(</span><span class="n">needs_lock</span><span class="p">)</span> <span class="k">as</span> <span class="n">root</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">362</span>             <span class="n">ds</span> <span class="o">=</span> <span class="n">_nc4_require_group</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_group</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">363</span>         <span class="k">return</span> <span class="n">ds</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/contextlib.py</span> in <span class="ni">__enter__</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">110</span>         <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">kwds</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">func</span>
-<span class="g g-Whitespace">    </span><span class="mi">111</span>         <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">112</span>             <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">113</span>         <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">114</span>             <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;generator didn&#39;t yield&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/file_manager.py</span> in <span class="ni">acquire_context</span><span class="nt">(self, needs_lock)</span>
-<span class="g g-Whitespace">    </span><span class="mi">185</span>     <span class="k">def</span> <span class="nf">acquire_context</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needs_lock</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">186</span>         <span class="sd">&quot;&quot;&quot;Context manager for acquiring a file.&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">187</span>         <span class="n">file</span><span class="p">,</span> <span class="n">cached</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_acquire_with_cache_info</span><span class="p">(</span><span class="n">needs_lock</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">188</span>         <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">189</span>             <span class="k">yield</span> <span class="n">file</span>
-
-<span class="nn">/opt/conda/envs/pysumma/lib/python3.7/site-packages/xarray/backends/file_manager.py</span> in <span class="ni">_acquire_with_cache_info</span><span class="nt">(self, needs_lock)</span>
-<span class="g g-Whitespace">    </span><span class="mi">203</span>                     <span class="n">kwargs</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">204</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;mode&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span>
-<span class="ne">--&gt; </span><span class="mi">205</span>                 <span class="n">file</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_opener</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">_args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">206</span>                 <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span> <span class="o">==</span> <span class="s2">&quot;w&quot;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">207</span>                     <span class="c1"># ensure file doesn&#39;t get overriden when opened again</span>
-
-<span class="nn">netCDF4/_netCDF4.pyx</span> in <span class="ni">netCDF4._netCDF4.Dataset.__init__</span><span class="nt">()</span>
-
-<span class="nn">netCDF4/_netCDF4.pyx</span> in <span class="ni">netCDF4._netCDF4._ensure_nc_success</span><span class="nt">()</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: b&#39;/home/jovyan/work/Jupyter_Book/pySUMMA_Jupyter_Book/pysumma_tutorial_jupyterbook/docs/summa_camels/output/merged_day/NLDAStruth_configs_latin.nc&#39;
 </pre></div>
 </div>
 </div>
@@ -730,14 +533,26 @@ This takes 6 minutes on 4 HRUs for the lhc_config problem, and less for the smal
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>windspd
-SWRadAtm
-spechum
-pptrate
-LWRadAtm
-airtemp
-airpres
-CPU times: user 30.4 s, sys: 2.41 s, total: 32.8 s
-Wall time: 32.8 s
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SWRadAtm
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>spechum
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pptrate
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LWRadAtm
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>airtemp
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>airpres
+CPU times: user 29.7 s, sys: 1.9 s, total: 31.6 s
+Wall time: 31.7 s
 </pre></div>
 </div>
 </div>
@@ -831,9 +646,9 @@ Let's first look at the error as a total over the simulated variables (14 of the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/camels_analyze_output_25_0.png" src="_images/camels_analyze_output_25_0.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 490 ms, sys: 27.9 ms, total: 518 ms
-Wall time: 518 ms
+<img alt="_images/camels_analyze_output_26_0.png" src="_images/camels_analyze_output_26_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 510 ms, sys: 39.9 ms, total: 550 ms
+Wall time: 548 ms
 </pre></div>
 </div>
 </div>
@@ -876,9 +691,9 @@ Wall time: 518 ms
   
 </pre></div>
 </div>
-<img alt="_images/camels_analyze_output_27_1.png" src="_images/camels_analyze_output_27_1.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1.88 s, sys: 67.3 ms, total: 1.95 s
-Wall time: 1.95 s
+<img alt="_images/camels_analyze_output_28_1.png" src="_images/camels_analyze_output_28_1.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 1.62 s, sys: 111 ms, total: 1.73 s
+Wall time: 1.7 s
 </pre></div>
 </div>
 </div>
@@ -940,17 +755,16 @@ Wall time: 1.95 s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/camels_analyze_output_30_0.png" src="_images/camels_analyze_output_30_0.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 11.5 s, sys: 251 ms, total: 11.7 s
-Wall time: 11.7 s
+<img alt="_images/camels_analyze_output_31_0.png" src="_images/camels_analyze_output_31_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 10.3 s, sys: 212 ms, total: 10.5 s
+Wall time: 10.5 s
 </pre></div>
 </div>
 </div>
 </div>
-<br>
 </div>
 <div class="section" id="differences-in-parameter-space-and-model-configuration">
-<h1><span class="section-number">13. </span>Differences in Parameter Space and Model Configuration<a class="headerlink" href="#differences-in-parameter-space-and-model-configuration" title="Permalink to this headline">¶</a></h1>
+<h2><span class="section-number">3.4. </span>Differences in Parameter Space and Model Configuration<a class="headerlink" href="#differences-in-parameter-space-and-model-configuration" title="Permalink to this headline">¶</a></h2>
 <p>We can plot the summation patterns plotted earlier for each decision. A decision is a combination of Latin Hypercube parameter set and model configuration choice. We plot blocks of model configurations on the x-axis, so each configuration has 11 LHC parameter sets associated with it for 11 vertical bars with each. If the model configurations were run, there are 8 configurations. Based on the paper results, we might expect to see more differences across model configurations but not many across the parameter space. So, every block of 11 parameter sets will set itself somewhat apart. First, we just plot the default model configuration. The default parameters will show up as the first parameter set.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1009,9 +823,9 @@ Wall time: 11.7 s
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/camels_analyze_output_33_0.png" src="_images/camels_analyze_output_33_0.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 15.2 s, sys: 308 ms, total: 15.5 s
-Wall time: 15.5 s
+<img alt="_images/camels_analyze_output_35_0.png" src="_images/camels_analyze_output_35_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 13.5 s, sys: 289 ms, total: 13.8 s
+Wall time: 13.8 s
 </pre></div>
 </div>
 </div>
@@ -1074,10 +888,11 @@ Now, if we calculated it, we can plot the full problem with all model configurat
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/camels_analyze_output_36_0.png" src="_images/camels_analyze_output_36_0.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 20.2 s, sys: 295 ms, total: 20.5 s
-Wall time: 20.5 s
+<img alt="_images/camels_analyze_output_38_0.png" src="_images/camels_analyze_output_38_0.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 17.9 s, sys: 229 ms, total: 18.1 s
+Wall time: 18.1 s
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -1111,7 +926,7 @@ Wall time: 20.5 s
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="camels_pysumma.html" title="previous page"><span class="section-number">6. </span>Running the SUMMA setups</a>
+    <a class='left-prev' id="prev-link" href="camels_pysumma.html" title="previous page"><span class="section-number">2. </span>Running SUMMA using pySUMMA</a>
     <a class='right-next' id="next-link" href="SummaModel_ReynoldsAspennStand_StomatalResistance_Basic_Plot.html" title="next page"><span class="section-number">1. </span>Modeling the Impact of Simlpe Soil Resistance method on Total Evapotranspiration in the Reynolds Mountain East catchment using pySUMMA</a>
 
     </div>
