@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+## clone and install pysumma
+git clone https://github.com/UW-Hydro/pysumma.git; cd pysumma
+conda env create -f environment.yml
+pip install .
+pip install geoviews
+
+## clone and install summa
+cd ..; git clone https://github.com/NCAR/summa.git
+
+## export necessary environment variables specified in Makefile
+export F_MASTER=/home/jovyan/summa
+export FC=gfortran
+export FC_EXE=/usr/bin/gfortran-6
+export INCLUDES='-I/usr/include'
+export LIBRARIES='-L/usr/lib -lnetcdff -lblas -llapack'
+
+## build from Makefile
+make -f ${F_MASTER}/build/Makefile
+
+# Install the JupyterLab dask-labextension
+jupyter labextension install dask-labextension@1.1.0
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @bokeh/jupyter_bokeh
